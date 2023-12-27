@@ -16,17 +16,20 @@ nav
     width: 100vw;
     background-color: white;
 }
-.navlinks
+.navlinks{
+    margin-top: 2vh;
+}
+.navlinks a
 {
     color: black;
     font-size: 25px;
     text-decoration: none;
     padding: 1vw;
 }
-nav .navlinks:hover{
+nav .navlinks a:hover{
     color: #B9D91A;
 }
-section video{
+section #vid{
     height: 100vh;
     width: 100vw; 
     object-fit: cover;
@@ -49,53 +52,48 @@ section .content p{
 }
 section .content h1 span{
     color: #B9D91A;
-    
 }
 /*base sprite css*/
 footer{
     text-align: center;
     position: fixed;
+    background-color: rgba(0, 0, 0, 0.546);
     bottom: 0vw;
     width: 100vw;
+    height: 15vh;
 }
 .icon{
     background: url(media/sprite.png);
     background-repeat: no-repeat;
+    margin-top: 10px;
     width: 100px;
     height: 100px;
     display: inline-block;
 }
 /*individual sprite positions*/
-#twitter{background-position: -430px -46px;}
-#instagram{background-position: -40px -176px;}
-#tiktok{background-position: -170px -176px;}
+#twt{background-position: -430px -46px;}
+#ig{background-position: -40px -176px;}
 #spotify{background-position: -300px -305px;}
 #youtube{background-position: -300px -176px;}
-/*code for site responsiveness*/
-@media screen and (max-width: 600px){
-nav{
-    position: relative;
-    background-color: white;
-}
-.sitename{
-    padding: 1vw;
-    color: black;
-    transition: .5s;
-}
-.navlinks{
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 100vw;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-.navlinks a{
-    color:black;
-    padding:12px 16px;
-    display:block;
-}
-.navlinks a:hover{background-color: #B9D91A; color: white; transition:  .5s;}
-nav:hover{background-color: #B9D91A;}
-nav:hover .navlinks{display: block;}
-nav:hover .sitename{background-color: #B9D91A; color: white; transition: .5s;}
-}
+@media screen and (max-width:600px){
+    .sitename{
+        padding: 1vw;
+        color: black;
+    }
+    .navlinks{
+        display: none;
+        position: absolute;
+        margin-top: 8vh;
+        background-color: white;
+        min-width: 100vw;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    .navlinks a{
+        padding: 12px 16px;
+        display:block;
+    }
+    nav .navlinks a:hover{background-color: #B9D91A; color: white;}
+    nav:hover{background-color: #B9D91A;}
+    nav:hover .navlinks{display: block;}
+    nav:hover .sitename{background-color: #B9D91A; color: white;}
+    }
